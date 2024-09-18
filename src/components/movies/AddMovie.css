@@ -1,0 +1,179 @@
+.add-movie-form{
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.heading{
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+}
+.field-css{
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 6px;
+    background-color: #333;
+    color: white;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.field-css:focus{
+    border-color: rgba(99, 10, 10);
+    background-color: #444;
+}
+.label{
+    display: block;
+    margin-bottom: 10px;
+}
+.four-components{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.field-component{
+    flex: 1;
+}
+.warning-checkbox{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    border: none;
+}
+.actor-director-section{
+    background-color: rgba(99, 10, 10, 0.3);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(99, 10, 10, 0.4);
+}
+.actor-director-section h3{
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+.search-field{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.button{
+    height: 40px;
+    width: 40px;
+    background-color: rgba(99, 10, 10);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.button:hover{
+    background-color: rgba(150, 20, 20);
+}
+.button img{
+    width: 24px;
+    height: 24px;
+}
+.list{
+    list-style: none;
+    padding: 10px;
+    background-color: #222;
+    border-radius: 6px;
+    max-height: 150px;
+    overflow-y: auto;
+    margin-top: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: absolute; /* Ensures dropdown-like behavior */
+    top: 45px; /* Position it below the search field */
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.list-item{
+    padding: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    cursor: pointer;
+}
+.list-item:last-child{
+    border-bottom: none;
+}
+.list-item:hover{
+    background-color: rgba(99, 10, 10, 0.5);
+}
+.awards-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-top: 15px;
+}
+.add-new-instance{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid rgba(99, 10, 10, 0.4);
+    border-radius: 8px;
+    background-color: #2a2a2a;
+}
+.awards{
+    margin-top: 10px;
+}
+.new-instance{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.new-instance > label{
+    width: 50%;
+}
+.update-button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(99, 10, 10);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.update-button:hover{
+    background-color: rgba(150, 20, 20);
+}
+.close-btn {
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-right: -16px;
+}

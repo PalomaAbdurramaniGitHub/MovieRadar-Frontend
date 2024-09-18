@@ -1,0 +1,127 @@
+.navbarContainer{
+    background-color: rgb(0, 0, 0);
+}
+#logoDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(99, 10, 10, 0.868);
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 20px;
+    gap: 5px;
+    font-weight: 500;
+}
+#logo{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+#title{
+    color: white;
+    margin: 0;
+}
+.component{
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin: 2px;
+}
+.component:hover{
+    background-color: rgb(244, 242, 242);
+    color: black;
+}
+.component:focus{
+    background-color: rgb(244, 242, 242);
+    color: black;
+}
+.searchField:hover{
+    box-shadow: none;
+}
+.searchField:focus{
+    box-shadow: none;
+}
+.searchField::-webkit-search-cancel-button{
+    appearance: none;
+}
+.loginBtn{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-weight: 400;
+}
+.loginBtn:hover{
+    background-color: rgba(99, 10, 10, 0.868);
+    color: white;
+}
+.loginBtn:active{
+    background-color: rgba(99, 10, 10, 0.868);
+    color: white;
+    border: 1px solid white;
+}
+.loginBtn:focus{
+    background-color: white;
+    color: black;
+}
+.footer{
+    bottom: 0;
+}
+.footerDiv{
+    color: white;
+}
+.search-bar{
+    background-color: rgb(227, 227, 227);
+}
+.search-bar:focus{
+    background-color: rgb(227, 227, 227);
+}
+.search-results-container{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding-top: 20px;
+}
+.close-btn{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    z-index: 1010;
+}
+.close-btn:hover{
+    color: #999;
+}
+.search-results{
+    max-height: 200px;
+    overflow-y: auto;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.search-results li{
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.search-results li:hover{
+    background-color: #f0f0f0;
+}
+.search-bar-container{
+    position: relative;
+}

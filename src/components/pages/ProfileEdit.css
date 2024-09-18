@@ -1,0 +1,117 @@
+.profile-edit-container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 50px;
+    border: 1px solid rgba(99, 10, 10, 0.632);
+    box-shadow: 5px 5px 5px 5px rgba(99, 10, 10, 0.632) inset;
+}
+.profile-edit-intro{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.profile-edit-photo{
+    width: 140px;
+    height: 140px;
+    border: 1px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.profile-edit-intro h1{
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-weight: 400;
+}
+.profile-edit-intro p{
+    margin: 0;
+    font-size: 17px;
+    color: #7e7d7d;
+}
+.profile-edit-form{
+    padding: 20px;
+    background-color: #ffffff1e;
+    border-radius: 8px;
+}
+.profile-edit-form label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: #ffffff;
+}
+.profile-edit-form input, .profile-edit-form select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #7e7d7d;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #333;
+}
+.profile-edit-form input[type="file"]{
+    border: none;
+}
+.submit-Button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.submit-Button:hover{
+    background-color: white;
+    color: black;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.delete-button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: rgba(134, 13, 13, 0.868);
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.delete-button:hover{
+    color: white;
+    background-color: rgba(99, 10, 10, 0.868);
+    border: 1px solid rgba(99, 10, 10, 0.868);
+    border-radius: 5px;
+}
+.preferences{
+    width: 95%;
+    margin-left: 30px;
+}
+.radiobuttons{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.radioElements{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.fieldset{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.radioEl{
+    display: flex;
+    gap: 5px;
+}
+.radio-element-buttons{
+    display: flex;
+    gap: 20px;
+}

@@ -1,0 +1,120 @@
+body{
+    background-color: black;
+}
+.starLogo{
+    width: 20px;
+    height: 20px;
+}
+.rating{
+    font-size: 18px;
+}
+.movieComponent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    font-size: 17px;
+    border: 1px solid rgb(99, 10, 10);
+    box-shadow: 5px 5px 5px 5px rgba(99, 10, 10, 0.632) inset;
+    color: white;
+}
+.movie-poster{
+    height: 300px;
+    width: 200px;
+}
+.title{
+    display: -webkit-box;
+    line-clamp: initial;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    width: 230px;
+    text-align: start;
+    font-size: 19px;
+    margin: 0;
+    padding: 0;
+}
+.moreBtn{
+    width: 200px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 4px;
+    padding-right: 4px;
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 7px;
+}
+.moreBtn:hover{
+    color: black;
+    background-color: white;
+}
+.add-movie{
+    height: 80px;
+}
+.add-movie-button{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+}
+.add-movie-button:hover{
+    background-color: rgba(99, 10, 10, 0.325);
+}
+.movie-screens{
+    height: 200px;
+}
+.admin-only{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.add-movie-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.admin-text{
+    font-weight: 400;
+}
+.admin-edit-delete{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.admin-delete{
+    background-color: rgb(99, 10, 10);
+    border: none;
+    padding: 7px 10px;
+    border-radius: 5px;
+    color: white;
+}
+.admin-edit{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+.admin-edit:hover{
+    background-color: rgb(237, 237, 237);
+}
+.admin-home-btn{
+    list-style-type: none;
+}
+.details-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+.edit-icon{
+    height: 13px;
+}
+.movieComponent {
+    margin: 15px;
+}

@@ -1,0 +1,107 @@
+.profile-container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 50px;
+    border: 1px solid rgba(99, 10, 10, 0.632);
+    box-shadow: 5px 5px 5px 5px rgba(99, 10, 10, 0.632) inset;
+}
+.profile-intro{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.profile-intro-details{
+    width: 100%;
+}
+.profile-photo{
+    width: 140px;
+    height: 140px;
+    border: 1px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.profile-intro h1{
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-weight: 400;
+}
+.profile-intro p{
+    margin: 0;
+    font-size: 17px;
+    color: #7e7d7d;
+}
+.profile-details{
+    padding: 20px;
+    background-color: #ffffff1e;
+    border-radius: 8px;
+}
+.profile-details p{
+    margin: 10px 0;
+    font-size: 17px;
+    color: #ffffff;
+}
+.profile-details strong{
+    font-weight: bold;
+    color: #7e7d7d;
+}
+.edit-button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+.edit-button:hover{
+    color: white;
+    background-color: rgba(99, 10, 10, 0.868);
+    border: 1px solid rgba(99, 10, 10, 0.867);
+    border-radius: 5px;
+}
+.profile-name{
+    color: white;
+}
+.movie-preferences{
+    margin-left: 60px;
+}
+.movie-preferences > p > strong{
+    font-weight: 500;
+}
+.name-email{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name-email > p{
+    color: white;
+    font-weight: 300;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.settings-image{
+    width: 25px;
+    height: 25px;
+}
+.first-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dropdown-elements{
+    margin-left: 8px;
+    margin-right: 8px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.delete-link{
+    color: rgba(99, 10, 10, 0.867);
+}

@@ -1,0 +1,101 @@
+.signup-body{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 50px;
+}
+#signup-logo{
+    width: 45px;
+    height: 45px;
+    margin: 0;
+}
+.field-container {
+    position: relative;
+}
+.required-icon {
+    position: absolute;
+    top: 0;
+    right: 6px;
+    color: rgb(54, 53, 53);
+    font-size: 20px;
+}
+.signup-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.signup-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.signup-title > h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+.login-link{
+    color: white;
+    font-size: 17px;
+    text-decoration: underline;
+    padding: 5px;
+}
+.signup-field{
+    width: 100%;
+}
+.radio-fields{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.radio-signup{
+    display: flex;
+}
+.gender-field{
+    border-right: 3px solid rgba(99, 10, 10, 0.868);
+}
+.field-name{
+    color: rgb(212, 212, 212);
+    font-weight: 400;
+    font-size: 17px;
+}
+.signup-here{
+    color: white;
+    background-color: rgba(99, 10, 10, 0.868);
+}
+.signup-here:hover{
+    background-color: rgba(157, 16, 16, 0.868);
+}
+.admin-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+.key-field{
+    width: 260px;
+}
+.form-control{
+    background-color: white;
+}
+.movie-screen{
+    height: 250px;
+    margin: 0;
+    margin-top: 50px;
+}
+.signup-components{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
