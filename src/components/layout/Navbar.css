@@ -23,17 +23,14 @@
 }
 .component{
     color: white;
-    border: 1px solid white;
-    border-radius: 20px;
     margin: 2px;
+    font-size: 17px;
 }
 .component:hover{
-    background-color: rgb(244, 242, 242);
-    color: black;
+    color: rgba(99, 10, 10, 0.868);
 }
 .component:focus{
-    background-color: rgb(244, 242, 242);
-    color: black;
+    color: white;
 }
 .searchField:hover{
     box-shadow: none;

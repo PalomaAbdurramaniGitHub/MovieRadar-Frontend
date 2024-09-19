@@ -1,0 +1,33 @@
+.contactUs-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 700px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.contactUs-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-end;
+    width: 100%;
+}
+.contactUs-textarea{
+    width: 680px;
+    height: 100px;
+    border: 1px solid rgba(99, 10, 10, 0.868);
+    border-radius: 5px;
+    padding: 7px;
+}
+.contactUs-button{
+    padding: 7px 15px;
+    margin-top: 5px;
+    color: rgba(99, 10, 10, 0.868);
+    border: 1px solid rgba(99, 10, 10, 0.868);
+    border-radius: 5px;
+}
+.contactUs-button:hover{
+    background-color: black;
+}

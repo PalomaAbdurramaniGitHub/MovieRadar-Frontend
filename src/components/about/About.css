@@ -1,0 +1,32 @@
+.about-page{
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #141414;
+    border-radius: 8px;
+    padding: 2rem;
+}
+.about-hero h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.about-hero, .about-mission, .about-team, .about-values, .about-cta{
+    margin-bottom: 2rem;
+}
+.about-mission h2, .about-team h2, .about-values h2, .about-cta h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.about-hero p, .about-mission p, .about-team p, .about-cta p{
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.about-values ul{
+    list-style-type: none;
+    padding: 0;
+}
+.about-values li{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+} 
