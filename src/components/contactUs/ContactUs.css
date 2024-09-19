@@ -7,6 +7,9 @@
     margin-top: 100px;
     margin-bottom: 100px;
 }
+.contactUs-container > p > strong{
+    font-size: 20px;
+}
 .contactUs-form{
     display: flex;
     flex-direction: column;
@@ -24,10 +27,11 @@
 .contactUs-button{
     padding: 7px 15px;
     margin-top: 5px;
-    color: rgba(99, 10, 10, 0.868);
-    border: 1px solid rgba(99, 10, 10, 0.868);
+    color: white;
+    border: 1px solid white;
     border-radius: 5px;
+    background-color: rgba(99, 10, 10, 0.868);
 }
 .contactUs-button:hover{
-    background-color: black;
+    background-color: rgba(118, 13, 13, 0.868);
 }
