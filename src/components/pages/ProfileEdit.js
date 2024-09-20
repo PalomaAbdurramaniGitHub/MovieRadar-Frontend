@@ -26,7 +26,7 @@ const ProfileEdit = () => {
 
     useEffect(() => {
         const fetchProfileData = async () => {
-            const token = JSON.parse(sessionStorage.getItem('token') || '""');
+            const token = JSON.parse(localStorage.getItem('token') || '""');
             if (!token) {
                 console.error('No auth token found');
                 return;
@@ -99,7 +99,7 @@ const ProfileEdit = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const token = JSON.parse(sessionStorage.getItem('token') || '""');
+        const token = JSON.parse(localStorage.getItem('token') || '""');
 
         const formData = new FormData();
         formData.append('name', profile.name);

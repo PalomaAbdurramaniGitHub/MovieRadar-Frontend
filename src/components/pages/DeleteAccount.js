@@ -11,7 +11,7 @@ const DeleteAccount = () => {
 
     const handleDelete = async (e) => {
         e.preventDefault();
-        const token = JSON.parse(sessionStorage.getItem('token') || '""');
+        const token = JSON.parse(localStorage.getItem('token') || '""');
         
         if (!password) {
             alert('Please enter your password.');

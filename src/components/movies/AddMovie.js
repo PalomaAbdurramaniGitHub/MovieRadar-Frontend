@@ -50,7 +50,7 @@ const AddMovie = () => {
     // Fetch profile data to check if the user is an admin
     useEffect(() => {
         const fetchProfileData = async () => {
-            const token = JSON.parse(sessionStorage.getItem('token') || '""');
+            const token = JSON.parse(localStorage.getItem('token') || '""');
             if (!token) {
                 console.error('No auth token found');
                 setLoading(false);
@@ -93,7 +93,7 @@ const AddMovie = () => {
 
     // Helper function to get the token
     const getAuthToken = () => {
-        return JSON.parse(sessionStorage.getItem('token') || '""');
+        return JSON.parse(localStorage.getItem('token') || '""');
     };
 
     // Search actors in the database

@@ -32,7 +32,7 @@ const MovieDetail = () => {
 
   const loadMovie = async () => {
     try {
-      const token = sessionStorage.getItem('token')?.replace(/"/g, '');
+      const token = localStorage.getItem('token')?.replace(/"/g, '');
       const result = await axios.get(`http://localhost:3000/api/movies/${id}`, {
         headers: {
           'Authorization': `Bearer ${token}`
@@ -47,7 +47,7 @@ const MovieDetail = () => {
 
   const loadMovieDirectors = async () => {
     try {
-      const token = sessionStorage.getItem('token')?.replace(/"/g, '');
+      const token = localStorage.getItem('token')?.replace(/"/g, '');
       const result = await axios.get(`http://localhost:3000/api/movies/${id}/directors`, {
         headers: {
           'Authorization': `Bearer ${token}`
@@ -62,7 +62,7 @@ const MovieDetail = () => {
 
   const loadMovieActors = async () => {
     try {
-      const token = sessionStorage.getItem('token')?.replace(/"/g, '');
+      const token = localStorage.getItem('token')?.replace(/"/g, '');
       const result = await axios.get(`http://localhost:3000/api/movies/${id}/actors`, {
         headers: {
           'Authorization': `Bearer ${token}`
@@ -77,7 +77,7 @@ const MovieDetail = () => {
 
   const loadReviews = async (movieId) => {
     try {
-      const token = sessionStorage.getItem('token')?.replace(/"/g, '');
+      const token = localStorage.getItem('token')?.replace(/"/g, '');
       const result = await axios.get(`http://localhost:3000/api/movies/${movieId}/reviews`, {
         headers: {
           'Authorization': `Bearer ${token}`
@@ -114,7 +114,7 @@ const MovieDetail = () => {
 
   useEffect(() => {
     const fetchProfile = async () => {
-      const token = sessionStorage.getItem('token')?.replace(/"/g, '');
+      const token = localStorage.getItem('token')?.replace(/"/g, '');
       if (!token) {
         console.error('No auth token found');
         return;
@@ -149,7 +149,7 @@ const MovieDetail = () => {
     userReviews.userId = profile._id;
     userReviews.movieId = id;
     try {
-      const token = sessionStorage.getItem('token')?.replace(/"/g, '');
+      const token = localStorage.getItem('token')?.replace(/"/g, '');
       const response = await axios.post('http://localhost:3000/api/reviews', userReviews, {
         headers: {
           'Authorization': `Bearer ${token}`
@@ -187,7 +187,7 @@ const MovieDetail = () => {
 
   const handleReviewDelete = async (reviewId) => {
     try {
-      const token = sessionStorage.getItem('token')?.replace(/"/g, '');
+      const token = localStorage.getItem('token')?.replace(/"/g, '');
       const response = await axios.delete(`http://localhost:3000/api/reviews/${reviewId}`, {
         headers: {
           'Authorization': `Bearer ${token}`
@@ -216,7 +216,7 @@ const MovieDetail = () => {
 
   const handleSaveChanges = async () => {
     try {
-      const token = sessionStorage.getItem('token')?.replace(/"/g, '');
+      const token = localStorage.getItem('token')?.replace(/"/g, '');
       const response = await axios.put(`http://localhost:3000/api/reviews/${reviewId}`, {
         comment: userReviews.comment,
         rating: userReviews.rating,

@@ -14,7 +14,7 @@ const ChangePassword = () => {
 
     useEffect(() => {
         const fetchProfileData = async () => {
-            const token = JSON.parse(sessionStorage.getItem('token') || '""');
+            const token = JSON.parse(localStorage.getItem('token') || '""');
             if (!token) {
                 console.error('No auth token found');
                 return;
@@ -45,7 +45,7 @@ const ChangePassword = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const token = JSON.parse(sessionStorage.getItem('token') || '""');
+        const token = JSON.parse(localStorage.getItem('token') || '""');
         try {
             const verifyResponse = await axios.put('http://localhost:3000/api/users/changePassword', {
                 currentPassword: currentPassword,

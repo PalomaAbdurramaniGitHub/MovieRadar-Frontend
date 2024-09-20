@@ -8,7 +8,7 @@ const ContactUs = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
-    const token =  JSON.parse(sessionStorage.getItem('token'));
+    const token =  JSON.parse(localStorage.getItem('token'));
     if (token) {
       setIsLoggedIn(true);
     } else {
@@ -26,7 +26,7 @@ const ContactUs = () => {
     }
 
     try {
-      const token =  JSON.parse(sessionStorage.getItem('token'));
+      const token =  JSON.parse(localStorage.getItem('token'));
       await axios.post(
         "http://localhost:3000/api/contact/form", 
         { message }, 

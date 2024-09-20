@@ -21,7 +21,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchProfileData = async () => {
-      const token = JSON.parse(sessionStorage.getItem('token') || '""');
+      const token = JSON.parse(localStorage.getItem('token') || '""');
       if (!token) {
         console.error('No auth token found');
         return;
@@ -57,7 +57,7 @@ const Home = () => {
   // Function to fetch suggestions for the user
   const loadSuggestions = async (userId) => {
     try {
-      const token = JSON.parse(sessionStorage.getItem('token') || '""');
+      const token = JSON.parse(localStorage.getItem('token') || '""');
       const response = await axios.get(`http://localhost:3000/api/suggestions`, {
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -73,7 +73,7 @@ const Home = () => {
   // Function to generate suggestions for the user
   const generateSuggestions = async (userId) => {
     try {
-      const token = JSON.parse(sessionStorage.getItem('token') || '""');
+      const token = JSON.parse(localStorage.getItem('token') || '""');
       const response = await axios.post('http://localhost:3000/api/suggestions/generate', { userId }, {
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -103,7 +103,7 @@ const Home = () => {
 
   const handleMovieDelete = async (movieId) => {
     try {
-      const token = JSON.parse(sessionStorage.getItem('token') || '""');
+      const token = JSON.parse(localStorage.getItem('token') || '""');
       if (!token) {
         throw new Error('No auth token found');
       }

@@ -10,7 +10,7 @@ const Profile = () => {
 
     useEffect(() => {
         const fetchProfile = async () => {
-            const token = sessionStorage.getItem('token')?.replace(/"/g, '');
+            const token = localStorage.getItem('token')?.replace(/"/g, '');
             if (!token) {
                 console.error('No auth token found');
                 return;
