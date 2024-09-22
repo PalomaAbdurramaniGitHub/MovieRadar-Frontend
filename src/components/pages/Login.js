@@ -24,7 +24,6 @@ const LoginPage = () => {
         event.preventDefault();
 
         try {
-            console.log("here");
             const response = await axios.post('http://localhost:3000/api/login', {
                 email,
                 password
